@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plant Paradise</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+   
+    .content-section {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="#">Plant Paradise 🌿</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              onclick="showSection('home'); return false;"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              onclick="showSection('about'); return false;"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              onclick="showSection('services'); return false;"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              onclick="showSection('contact'); return false;"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section
+    id="home"
+    class="content-section text-center p-5 bg-light container"
+  >
+    <h1>Welcome to Plant Paradise 🌱</h1>
+    <p>
+      Discover the beauty of nature at home with our carefully curated
+      plants.
+    </p>
+  </section>
+
+  
+  <section id="about" class="content-section container p-5">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Plant Paradise</strong>, we believe plants bring life,
+      beauty, and peace to any space. Our mission is to provide top-quality
+      plants for homes and offices, ensuring the perfect blend of aesthetics
+      and nature.
+    </p>
+  </section>
+
+ 
+  <section id="services" class="content-section bg-light p-5">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>Plant Selection Guidance</strong> – Choose the right plants for your space.</li>
+        <li><strong>Plant Care Tips</strong> – Learn watering, sunlight, and maintenance techniques.</li>
+        <li><strong>Repotting & Maintenance</strong> – Keep your plants thriving.</li>
+        <li><strong>Workshops & Events</strong> – Engage with fellow plant lovers!</li>
+      </ul>
+    </div>
+  </section>
+
+  <section
+    id="contact"
+    class="content-section container p-5 text-center"
+  >
+    <h2>Contact Us</h2>
+    <p>📍 <strong>Location:</strong> ADB Road, Rajahmundry</p>
+    <p>📧 <strong>Email:</strong> plantprakesh@gmail.com</p>
+    <p>📞 <strong>Phone:</strong> 91+ 9951398555</p>
+    <p>
+      🌍
+      <strong>Website:</strong>
+      <a href="#">www.plantparadise.com</a>
+    </p>
+  </section>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img
+            src="Fiddle Leaf.jpeg"
+            class="card-img-top"
+            alt="Fiddle Leaf Fig"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Fiddle Leaf Fig</h5>
+            <p class="card-text">A stylish and elegant indoor plant.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="snake plant.jpg" class="card-img-top" alt="Snake Plant" />
+          <div class="card-body">
+            <h5 class="card-title">Snake Plant</h5>
+            <p class="card-text">A low-maintenance air-purifying plant.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Monstera.jpeg" class="card-img-top" alt="Monstera" />
+          <div class="card-body">
+            <h5 class="card-title">Monstera</h5>
+            <p class="card-text">Perfect for adding a tropical vibe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="text-center p-3 bg-success text-white mt-4">
+    <p>© 2025 Plant Paradise. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+     
+      document.querySelectorAll(".content-section").forEach((section) => {
+        section.style.display = "none";
+      });
+      
+      const selected = document.getElementById(sectionId);
+      if (selected) {
+        selected.style.display = "block";
+      }
+    }
+
+   
+    document.addEventListener("DOMContentLoaded", () => showSection("home"));
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
